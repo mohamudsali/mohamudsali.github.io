@@ -11,7 +11,7 @@
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
       background-color: #f7f9fc;
       color: #333;
-      scroll-behavior: smooth; /* smooth scroll for anchor links */
+      scroll-behavior: smooth;
     }
 
     /* Navbar */
@@ -91,7 +91,20 @@
       text-align: center;
     }
 
-    /* Icons */
+    /* Contact Icons */
+    .contact-icons {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .contact-icons a {
+      margin: 0 12px;
+      text-decoration: none;
+      font-size: 20px;
+      color: #1a73e8;
+    }
+
+    /* Other Icons */
     .icons {
       text-align: center;
       margin-bottom: 30px;
@@ -118,21 +131,21 @@
     }
 
     /* Bio and other text */
-    .bio, .interests, .education, .news {
+    .bio, .interests, .education, .news, .publications, .cv {
       line-height: 1.7;
       font-size: 16px;
       color: #444;
     }
 
-    .bio p, .interests p, .education p, .news p {
+    .bio p, .interests p, .education p, .news p, .publications p, .cv p {
       margin-bottom: 15px;
     }
 
-    .news ul {
+    .news ul, .publications ul {
       padding-left: 20px;
     }
 
-    .news li {
+    .news li, .publications li {
       margin-bottom: 8px;
     }
   </style>
@@ -147,8 +160,6 @@
       <li><a href="#home">Home</a></li>
       <li><a href="#news">News</a></li>
       <li><a href="#publications">Publications</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#contact">Contact</a></li>
       <li><a href="#cv">CV</a></li>
       <li><a href="#bio">Bio</a></li>
     </ul>
@@ -163,6 +174,14 @@
       <div class="name">Mohamud Ali</div>
       <div class="title">Research Scientist</div>
       <div class="affiliation">IBM Thomas J. Watson Research Center</div>
+
+      <!-- Contact info under name -->
+      <div class="contact-icons">
+        <a href="https://github.com/your-github" target="_blank">GitHub</a>
+        <a href="https://your-personal-page.com" target="_blank">Page</a>
+        <a href="mailto:your.email@example.com">Email</a>
+        <a href="https://linkedin.com/in/your-linkedin" target="_blank">LinkedIn</a>
+      </div>
 
       <div class="icons">
         <a href="#">📧</a>
@@ -195,7 +214,7 @@
 
         <p>
           In my free time, you’ll find me betwixt and between—either playing soccer or running, whether in the jungle or on the treadmill. 
-          Oh, and not to mention, I’m a bit of a bookaholic too!
+          Oh, and not to mention, I’m a bit of a bookaholic too! I also like to play cricket!
         </p>
       </div>
     </section>
@@ -242,35 +261,26 @@
         </ul>
       </div>
     </section>
+
     <!-- Publications Section -->
     <section id="publications">
-    <h2>Publications</h2>
-    <div class="publications">
+      <h2>Publications</h2>
+      <div class="publications">
         <ul>
-        <li>Paper 1: Title, Journal/Conference, Year</li>
-        <li>Paper 2: Title, Journal/Conference, Year</li>
-        <!-- Add your publications here -->
+          <li>Paper 1: Title, Journal/Conference, Year</li>
+          <li>Paper 2: Title, Journal/Conference, Year</li>
         </ul>
-    </div>
+      </div>
     </section>
 
     <!-- CV Section -->
     <section id="cv">
-    <h2>CV</h2>
-    <div class="cv">
+      <h2>CV</h2>
+      <div class="cv">
         <p>You can download my CV here: <a href="MohamudAli_CV.pdf" target="_blank">PDF</a></p>
-    </div>
+      </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-    <h2>Contact</h2>
-    <div class="contact">
-        <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
-        <p>LinkedIn: <a href="#">Profile Link</a></p>
-        <p>GitHub: <a href="#">Profile Link</a></p>
-    </div>
-    </section>
   </div>
 </body>
 </html>
