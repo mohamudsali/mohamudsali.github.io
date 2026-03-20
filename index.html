@@ -5,6 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mohamud Ali</title>
 
+  <!-- Font Awesome for logos -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+
   <style>
     body {
       margin: 0;
@@ -91,17 +97,21 @@
       text-align: center;
     }
 
-    /* Contact Icons */
+    /* Contact icons */
     .contact-icons {
       text-align: center;
       margin-bottom: 30px;
     }
 
     .contact-icons a {
-      margin: 0 12px;
-      text-decoration: none;
-      font-size: 20px;
+      margin: 0 15px;
       color: #1a73e8;
+      transition: transform 0.2s, color 0.2s;
+    }
+
+    .contact-icons a:hover {
+      color: #155ab6;
+      transform: scale(1.2);
     }
 
     /* Other Icons */
@@ -130,14 +140,14 @@
       color: #2c3e50;
     }
 
-    /* Bio and other text */
-    .bio, .interests, .education, .news, .publications, .cv {
+    /* Text blocks */
+    .text-block, .interests, .education, .news, .publications, .cv {
       line-height: 1.7;
       font-size: 16px;
       color: #444;
     }
 
-    .bio p, .interests p, .education p, .news p, .publications p, .cv p {
+    .text-block p, .interests p, .education p, .news p, .publications p, .cv p {
       margin-bottom: 15px;
     }
 
@@ -161,7 +171,7 @@
       <li><a href="#news">News</a></li>
       <li><a href="#publications">Publications</a></li>
       <li><a href="#cv">CV</a></li>
-      <li><a href="#bio">Bio</a></li>
+      <!-- Bio removed from navbar -->
     </ul>
   </nav>
 
@@ -175,12 +185,20 @@
       <div class="title">Research Scientist</div>
       <div class="affiliation">IBM Thomas J. Watson Research Center</div>
 
-      <!-- Contact info under name -->
+      <!-- Contact logos under name -->
       <div class="contact-icons">
-        <a href="https://github.com/your-github" target="_blank">GitHub</a>
-        <a href="https://your-personal-page.com" target="_blank">Page</a>
-        <a href="mailto:your.email@example.com">Email</a>
-        <a href="https://linkedin.com/in/your-linkedin" target="_blank">LinkedIn</a>
+        <a href="https://github.com/your-github" target="_blank" title="GitHub">
+          <i class="fab fa-github fa-2x"></i>
+        </a>
+        <a href="https://your-personal-page.com" target="_blank" title="Personal Page">
+          <i class="fas fa-globe fa-2x"></i>
+        </a>
+        <a href="mailto:your.email@example.com" title="Email">
+          <i class="fas fa-envelope fa-2x"></i>
+        </a>
+        <a href="https://linkedin.com/in/your-linkedin" target="_blank" title="LinkedIn">
+          <i class="fab fa-linkedin fa-2x"></i>
+        </a>
       </div>
 
       <div class="icons">
@@ -190,12 +208,9 @@
         <a href="#">🐦</a>
         <a href="#">🔗</a>
       </div>
-    </section>
 
-    <!-- Bio Section -->
-    <section id="bio">
-      <h2>Bio</h2>
-      <div class="bio">
+      <!-- Bio text moved here as a simple paragraph -->
+      <div class="text-block">
         <p>
           I am a Research Scientist at IBM Research in the Quantum Systems and Infrastructure team. 
           I am currently pursuing my Ph.D. in Electrical Engineering at The University of Minnesota-Twin Cities, supervised by Prof. Kevin Cao. 
