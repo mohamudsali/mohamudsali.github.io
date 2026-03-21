@@ -67,13 +67,14 @@
       padding: 0 20px;
     }
 
-    /* Profile image */
+    /* Profile image (CENTERED) */
     .profile-img {
       width: 160px;
       height: 160px;
       border-radius: 50%;
       object-fit: cover;
-      margin-bottom: 20px;
+      display: block;
+      margin: 0 auto 20px auto;
     }
 
     /* Name & title */
@@ -114,28 +115,14 @@
       transform: scale(1.2);
     }
 
-    /* Other Icons */
-    .icons {
-      text-align: center;
-      margin-bottom: 30px;
-    }
-
-    .icons a {
-      margin: 0 8px;
-      text-decoration: none;
-      font-size: 20px;
-      color: #1a73e8;
-    }
-
     /* Sections */
     section {
       margin-bottom: 40px;
     }
 
+    /* REMOVE underline */
     section h2 {
       font-size: 24px;
-      border-bottom: 2px solid #1a73e8;
-      padding-bottom: 5px;
       margin-bottom: 15px;
       color: #2c3e50;
     }
@@ -173,7 +160,6 @@
       <li><a href="#news">News</a></li>
       <li><a href="#publications">Publications</a></li>
       <li><a href="#cv">CV</a></li>
-      <!-- Bio removed from navbar -->
     </ul>
   </nav>
 
@@ -187,7 +173,7 @@
       <div class="title">Research Scientist</div>
       <div class="affiliation">IBM Thomas J. Watson Research Center</div>
 
-      <!-- Contact logos under name -->
+      <!-- Contact logos -->
       <div class="contact-icons">
         <a href="https://github.com/mohamudsali/" target="_blank" title="GitHub">
           <i class="fab fa-github fa-2x"></i>
@@ -203,7 +189,7 @@
         </a>
       </div>
 
-      <!-- Bio text moved here as a simple paragraph -->
+      <!-- Bio -->
       <div class="text-block">
         <p>
           I am a Research Scientist at IBM Research in the Quantum Systems and Infrastructure team. 
@@ -228,7 +214,7 @@
       </div>
     </section>
 
-    <!-- Interests Section -->
+    <!-- Research -->
     <section id="research">
       <h2>Research Interests</h2>
       <div class="research">
@@ -242,47 +228,41 @@
       </div>
     </section>
 
-    <!-- Education Section -->
+    <!-- Education -->
     <section id="education">
       <h2>Education</h2>
       <div class="education">
-        <p>PhD in Electrical Engineering, Aug 2026 - <br>University of Minnesota-Twin Cities, Minneapolis, MN, USA</p>
-        <p>MS in Electrical Engineering, June 2025<br>Northwestern University, Evanston, IL, USA</p>
-        <p>BS in Electrical Engineering, May 2023<br>University of Minnesota-Twin Cities, Minneapolis, MN, USA</p>
+        <p>PhD in Electrical Engineering, Aug 2026 - <br>University of Minnesota-Twin Cities</p>
+        <p>MS in Electrical Engineering, June 2025<br>Northwestern University</p>
+        <p>BS in Electrical Engineering, May 2023<br>University of Minnesota-Twin Cities</p>
       </div>
     </section>
 
-    <!-- News Section -->
+    <!-- News -->
     <section id="news">
       <h2>What's New?</h2>
       <div class="news">
         <ul>
-          <li>📖 07/04/2025: Our paper on GPU Travelling accepted on ACM CCS 2025 with minor revision 😊</li>
-          <li>📖 09/19/2024: Our patent related to object guided fuzzing has been published!</li>
-          <li>📖 09/05/2024: Our patent related to dynamic quarantining of bad containers has been published!</li>
-          <li>📚 05/23/2024: Our paper on Split API-based confidential containers accepted in ACM CCS 2024!</li>
-          <li>📚 05/01/2024: Our paper titled Fast (Trapless) Kernel Probes accepted in the USENIX ATC '24!</li>
-          <li>📖 03/05/2024: Our patent related to security risk-aware scheduling has been granted!</li>
-          <li>📚 07/02/2023: Our workshop paper on eBPF kCFI accepted in SIGCOMM 2023 Workshop (eBPF '23)!</li>
-          <li>📚 05/22/2023: Our paper on prioritizing sensitive data has been accepted in USENIX Security'23 😀</li>
-          <li>📚 03/27/2023: Our paper on Intel TDX Demystified: A Top-Down Approach is available on arXiv!</li>
-          <li>📚 01/03/2023: Our paper on container security using syscall-aware scheduler accepted in AsiaCCS 2023!</li>
+          <li>📖 07/04/2025: Paper accepted at ACM CCS 2025 😊</li>
+          <li>📖 09/19/2024: Patent on object guided fuzzing published</li>
+          <li>📖 09/05/2024: Patent on container quarantining published</li>
+          <li>📚 05/23/2024: Paper accepted at ACM CCS 2024</li>
         </ul>
       </div>
     </section>
 
-    <!-- Publications Section -->
+    <!-- Publications -->
     <section id="publications">
       <h2>Publications</h2>
       <div class="publications">
         <ul>
-          <li>Paper 1: Title, Journal/Conference, Year</li>
-          <li>Paper 2: Title, Journal/Conference, Year</li>
+          <li>Paper 1: Title, Conference, Year</li>
+          <li>Paper 2: Title, Conference, Year</li>
         </ul>
       </div>
     </section>
 
-    <!-- CV Section -->
+    <!-- CV -->
     <section id="cv">
       <h2>CV</h2>
       <div class="cv">
